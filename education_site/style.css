@@ -139,9 +139,6 @@ p {
   font-size: 36px;
 }
 
-.h-450px {
-  height: 450px;
-}
 
 /* sm screen size */
 @media (min-width: 640px) {
