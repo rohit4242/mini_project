@@ -13,26 +13,24 @@
 })();
 
 
-
 var submit = document.getElementById("submit");
 submit.addEventListener("click", function(e){
     e.preventDefault();
-    var name = document.getElementById("name").value;
-    var mail = document.getElementById("email").value;
+    var name = document.getElementById('name').value;
+    const  mail = document.getElementById('email').value;
     var subject = document.getElementById("subject").value;
     var message = document.getElementById("message").value;
-    var body = "Name: "+name+"Email: "+mail+"Subject: "+subject+"Message: "+message;
 
-
+    console.log("message sended");
     Email.send({
-        Host : "smtp.gmail.com",
-        Username : "rabariranchhod3@gmail.com",
-        Password : "gdonzovdfvsfryyg",
-        To : 'rabariranchhod3@gmail.com',
+        Host : "smtp.elasticemail.com",
+        Username : "rohitluni123@gmail.com",
+        Password : "B412970EE5E01E064E12B2EFA2A148DD0F9D",
+        To : 'rohitluni123@gmail.com',
         From : mail,
         Subject : subject,
-        Body : body
+        Body : "Name: "+name+"<br> Email: "+mail+"<br> Subject: "+subject+"<br> Message: "+message
     }).then(
-      message => alert(message)
+    message => alert(message)
     );
 })
