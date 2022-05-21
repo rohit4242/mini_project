@@ -23,12 +23,22 @@ submit.addEventListener("click", function(e){
     var message = document.getElementById("message").value;
     var body = "Name: "+name+"Email: "+mail+"Subject: "+subject+"Message: "+message;
 
+    console.log(body);
+    // Email.send({
+    //     Host : "mail.therencho.com",
+    //     Username : "tech@therencho.com",
+    //     Password : "ewR~&r%2j#B@",
+    //     To : 'contact@therencho.com',
+    //     From : 
+    //     Subject : 
+    //     Body : 
+    // }).then(
+    //   message => alert(message)
+    // );
 
     Email.send({
-        Host : "smtp.gmail.com",
-        Username : "rabariranchhod3@gmail.com",
-        Password : "gdonzovdfvsfryyg",
-        To : 'rabariranchhod3@gmail.com',
+        SecureToken : "ab0a9f77-223b-4c0b-8a64-4944cd3742d3",
+        To : 'them@website.com',
         From : mail,
         Subject : subject,
         Body : body
