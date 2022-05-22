@@ -16,22 +16,17 @@
 var submit = document.getElementById("submit");
 submit.addEventListener("click", function(e){
     e.preventDefault();
-    var name = document.getElementById('name').value;
-    const  mail = document.getElementById('email').value;
-    var subject = document.getElementById("subject").value;
-    var message = document.getElementById("message").value;
+    var params = {
 
-    console.log("message sended");
-    Email.send({
-        Host : "smtp.elasticemail.com",
-        Username : "rohitluni123@gmail.com",
-        Password : "B412970EE5E01E064E12B2EFA2A148DD0F9D",
-        To : 'rohitluni123@gmail.com',
-        From : mail,
-        Subject : subject,
-        Body : "Name: "+name+"<br> Email: "+mail+"<br> Subject: "+subject+"<br> Message: "+message
-    }).then(
-    message => alert(message)
-    );
-    
+        from_name : document.getElementById('name').value,
+        email : document.getElementById('email').value,
+        subject : document.getElementById("subject").value,
+        message : document.getElementById("message").value
+    }
+    emailjs.send("service_a16u8n2","template_zc1cpgb",params).then
+    (function(response) {
+        console.log("SUCCESS!", response.status);
+        alert("Your message has been sent!");
+    })
+       
 })
