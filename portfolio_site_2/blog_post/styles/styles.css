@@ -318,14 +318,13 @@ section {
   }
 
   .controls {
-    top: auto;
-    bottom: 0;
-    flex-direction: row;
+    top: 1%;
+    /* flex-direction: row; */
     justify-content: center;
-    left: 50%;
+    left: 5%;
     transform: translateX(-50%);
     width: 100%;
-    background-color: var(--color-grey-5);
+    /* background-color: var(--color-grey-5); */
   }
   .controls .control {
     margin: 1rem 0.3rem;
