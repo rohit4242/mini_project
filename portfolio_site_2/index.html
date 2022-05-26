@@ -356,27 +356,26 @@
                 </div>
             </div>
         </section>
-        <section class="container" id="blogs">
-            <div class="blogs-content">
+        
+        <section class="container" id="blog">
+            <div class="blogs-content" data-id="all-blogs">
                 <div class="main-title">
                     <h2>My <span>Blogs</span><span class="bg-text">My Blogs</span></h2>
                 </div>
-                <div class="blogs">
-                    <div class="blog">
-                        <a href="#about">
-                            <img src="img/port6.jpg" alt="">
-                            <div class="blog-text">
-                                <h4>
-                                    How to Create Your Own Website
-                                </h4>
-                                <p>
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                    Doloribus natus voluptas, eos obcaecati recusandae amet?
-                                </p>
-                            </div>
-                        </a>
+                <div class="blogs" id="blog_pages">
+                    <div class="blog active-btn" data-id="page_1">
+                        <img src="img/port6.jpg" alt="">
+                        <div class="blog-text">
+                            <h4>
+                                How to Create Your Own Website
+                            </h4>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Doloribus natus voluptas, eos obcaecati recusandae amet?
+                            </p>
+                        </div>
                     </div>
-                    <div class="blog">
+                    <div class="blog" data-id="page_2">
                         <img src="img/blog1.jpg" alt="">
                         <div class="blog-text">
                             <h4>
@@ -388,7 +387,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="blog">
+                    <div class="blog" data-id="page_3">
                         <img src="img/blog2.jpg" alt="">
                         <div class="blog-text">
                             <h4>
@@ -400,7 +399,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="blog">
+                    <div class="blog" data-id="page_4">
                         <img src="img/blog3.jpg" alt="">
                         <div class="blog-text">
                             <h4>
@@ -412,7 +411,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="blog">
+                    <div class="blog" data-id="page_5">
                         <img src="img/port1.jpg" alt="">
                         <div class="blog-text">
                             <h4>
@@ -424,7 +423,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="blog">
+                    <div class="blog" data-id="page_6">
                         <img src="img/port3.jpg" alt="">
                         <div class="blog-text">
                             <h4>
@@ -537,13 +536,17 @@
                 </div>
             </div>
         </section>
+<!-- blog pages -->
 
-        <section class="container about" id="about">
-            <div class="main-title">
-                <h2>My <span>Portfolio</span><span class="bg-text">My Work</span></h2>
-            </div>
-            
+        <section class="container"id="all-blogs">
+            <div class="active" id="page_1">page 1</div>
+            <div class="" id="page_2">page 2</div>
+            <div class="" id="page_3">page 3</div>
+            <div class="" id="page_4">page 4</div>
+            <div class="" id="page_5">page 5</div>
+            <div class="" id="page_6">page 6</div>
         </section>
+
     </main>
 
     <div class="controls">
@@ -556,7 +559,7 @@
         <div class="control" data-id="portfolio">
             <i class="fas fa-briefcase"></i>
         </div>
-        <div class="control" data-id="blogs">
+        <div class="control" data-id="blog">
             <i class="far fa-newspaper"></i>
         </div>
         <div class="control" data-id="contact">
@@ -566,6 +569,7 @@
     <div class="theme-btn">
         <i class="fas fa-adjust"></i>
     </div>
+
     <script src="app.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js">
     </script>
