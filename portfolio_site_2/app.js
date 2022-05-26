@@ -23,7 +23,7 @@ submit.addEventListener("click", function(e){
         subject : document.getElementById("subject").value,
         message : document.getElementById("message").value
     }
-    emailjs.send("service_a16u8n2","template_zc1cpgb",params).then
+    emailjs.send("service_puwcrp8","template_1yrho9l",params).then
     (function(response) {
         console.log("SUCCESS!", response.status);
         alert("Your message has been sent!");
