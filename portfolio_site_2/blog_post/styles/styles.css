@@ -50,17 +50,29 @@ a {
   font-family: inherit;
 }
 
-
-section {
- 
-}
-
 .main-text{
+  margin-bottom: 20px;
   text-align: center;
   color: var(--color-secondary);
   font-size:2rem;
 }
 
+.about-no-code{
+  text-align: center;
+  color: var(--color-grey-4);
+  font: size 0.5em;
+}
+
+#mypdfviewer{
+  height: 60rem;
+  width:55rem;
+
+}
+
+.show-pdf{
+  text-align: center;
+
+}
 .header {
   margin: 1rem;
   display:flex;
