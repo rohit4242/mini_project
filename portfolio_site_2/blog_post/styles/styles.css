@@ -105,6 +105,11 @@ a {
   align-items: center;
 }
 
+.def-text{
+  color: var(--color-grey-2);
+  font-size: 1.5rem;
+  text-align: center;
+}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
